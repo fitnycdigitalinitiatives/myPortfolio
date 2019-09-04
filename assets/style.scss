@@ -11,9 +11,15 @@ body {
     min-height: calc(100vh - 56px); //Fullscreen minus the height of the navbar
   }
 }
-:target::before {
-  content: "";
-  display: block;
-  height: 56px; /* fixed header height*/
-  margin: -56px 0 0; /* negative fixed header height */
+main > .row:nth-child(odd) {
+  //background-color: rgba(216, 242, 232, 0.25);
+}
+main > .row:nth-child(even) {
+  //background-color: rgba(242, 216, 226, 0.25);
+}
+main > .row {
+  border-bottom: 1px solid #E7E7E7;
+}
+main > .row:last-of-type {
+  border-bottom: none;
 }
