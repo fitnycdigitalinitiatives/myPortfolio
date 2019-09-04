@@ -1,0 +1,20 @@
+<header>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white shadow-sm" id="navbar">
+    <a class="navbar-brand scroll-link" href="#top">{{ site.title }}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        {% for project in site.projects %}
+        <li class="nav-item">
+          <a class="nav-link scroll-link" href="#{{ project.title | remove: " " }}">{{ project.title }}</a>
+        </li>
+        {% endfor %}
+        <li class="nav-item">
+          <a class="nav-link scroll-link" href="#about">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>

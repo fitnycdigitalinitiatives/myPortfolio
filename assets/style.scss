@@ -1,0 +1,19 @@
+---
+---
+
+// start content
+
+body {
+  padding-top: 56px; //displace height of fixed navbar
+}
+@media (min-width: 768px) {
+  #landing, .project, #about {
+    min-height: calc(100vh - 56px); //Fullscreen minus the height of the navbar
+  }
+}
+:target::before {
+  content: "";
+  display: block;
+  height: 56px; /* fixed header height*/
+  margin: -56px 0 0; /* negative fixed header height */
+}

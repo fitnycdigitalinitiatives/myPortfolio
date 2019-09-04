@@ -1,0 +1,10 @@
+---
+layout: default
+---
+{% include landing.html %}
+
+{% for project in site.projects %}
+  {% include project.html %}
+{% endfor %}
+
+{% include about.html %}
