@@ -2,12 +2,13 @@
 ---
 
 // start content
+@import url('https://use.fontawesome.com/releases/v5.10.2/css/all.css');
 
 body {
   padding-top: 56px; //displace height of fixed navbar
 }
 @media (min-width: 768px) {
-  #landing, .project, #about {
+  main > .row {
     min-height: calc(100vh - 56px); //Fullscreen minus the height of the navbar
   }
 }
@@ -22,4 +23,7 @@ main > .row {
 }
 main > .row:last-of-type {
   border-bottom: none;
+}
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #6c757d;
 }
