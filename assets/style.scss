@@ -3,9 +3,16 @@
 
 // start content
 @import url('https://use.fontawesome.com/releases/v5.10.2/css/all.css');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,500,500i&display=swap');
 
 body {
   padding-top: 56px; //displace height of fixed navbar
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+}
+.display-4 small {
+  font-weight: 300;
 }
 #page-down {
   position: fixed;

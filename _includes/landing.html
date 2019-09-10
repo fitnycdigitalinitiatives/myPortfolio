@@ -1,10 +1,10 @@
 {% assign landing = site.info | where: "name", "landing.md" | first %}
 <div class="row align-items-md-center justify-content-md-center py-5" id="landing">
-  <div class="col-md-6 col-lg-5 col-xl-4">
+  <div class="col-md-5 col-xl-4">
     {% capture imageURL %}/assets/images/{{ landing.image }}{% endcapture %}
     <img src="{{ imageURL | relative_url }}" alt="Portrait of portfolio owner" class="img-fluid rounded-circle border border-light">
   </div>
-  <div class="col-md-6 col-lg-7 col-xl-6">
+  <div class="col-md-7 col-xl-6">
     <h1 class="display-1">
       {{ landing.title }}
     </h1>
