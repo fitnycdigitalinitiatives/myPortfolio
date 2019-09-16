@@ -1,5 +1,5 @@
 <div class="row align-items-md-center justify-content-md-center project py-5 py-md-0" id="{{ project.title | remove: " " }}">
-  <div class="col-md-3 col-lg-4 col-xl-5 px-md-0 project-image">
+  <div class="col-md-3 col-lg-4 col-xl-5 py-md-3 project-image">
     {% capture imageURL %}/assets/images/{{ project.image }}{% endcapture %}
     <img src="{{ imageURL | relative_url }}" alt="{{ project.title }}" class="img-fluid">
   </div>

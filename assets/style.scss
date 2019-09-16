@@ -31,10 +31,6 @@ body {
   .project:nth-child(odd) .project-image {
     order: 13;
   }
-  .project-image img {
-    min-height: calc(100vh - 56px);
-    object-fit: cover;
-  }
 }
 @media (max-width: 767px) {
   .display-1 {
