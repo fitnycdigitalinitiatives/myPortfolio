@@ -50,12 +50,6 @@ body {
     border: none;
   }
 }
-main > .row:nth-child(odd) {
-  //background-color: rgba(216, 242, 232, 0.25);
-}
-main > .row:nth-child(even) {
-  //background-color: rgba(242, 216, 226, 0.25);
-}
 main > .row {
   border-bottom: 1px solid #f5f5f5;
 }
